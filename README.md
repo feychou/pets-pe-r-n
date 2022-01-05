@@ -1,0 +1,3 @@
+`curl -d '{"name": "gracie", "person_id": 2, "type": "dog", "age": 7, "features": "alertedness, tinyness"}' -H "Content-Type: application/json" -X POST http://localhost:3000/api/pets`
+`curl -X DELETE http://localhost:3000/api/pets/6`
+`curl -d '{"name": "gracey", "person_id": 3, "type": "dog", "age": 8, "features": "alertedness, tinyness"}' -H "Content-Type: application/json" -X PUT http://localhost:3000/api/pets/4`

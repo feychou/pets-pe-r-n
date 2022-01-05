@@ -2,19 +2,23 @@ import express from 'express';
 
 import {
   getPets,
-  getPet
+  getPet,
+  createPet,
+  deletePet,
+  editPet
 } from '../controllers/pets.js';
+
 const api = express.Router();
 
 api
   .route('/')
   .get(getPets)
-  //post endpoint
+  .post(createPet)
 
 api
   .route('/:id')
   .get(getPet)
-  //delete endpoint
-  //put endpoint
+  .delete(deletePet)
+  .put(editPet)
 
 export default api;
